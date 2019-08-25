@@ -7,7 +7,7 @@ RUN apt-get install -y --no-install-recommends \
 	sudo \
 	openssh-server openssh-sftp-server rsync \
 	make cmake clang gdb \
-	libboost-dev
+	libboost-all-dev
 
 RUN mkdir /var/run/sshd
 
