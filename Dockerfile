@@ -1,4 +1,5 @@
-FROM ubuntu:bionic
+ARG BASE_IMAGE=ubuntu:latest
+FROM ${BASE_IMAGE}
 
 RUN apt-get update && apt-get upgrade -y
 
