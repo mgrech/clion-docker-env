@@ -1,0 +1,8 @@
+version: '3'
+services:
+  clion-env:
+    build: .
+    image: grechm/clion-env:latest
+    ports:
+    - "222:22"
+    container_name: clion-env
