@@ -16,5 +16,5 @@ RUN echo 'root:root' | chpasswd \
  && usermod -aG sudo dev \
  && echo 'dev:dev' | chpasswd
 
-EXPOSE 22 7777
+EXPOSE 22
 CMD ["/usr/sbin/sshd", "-D"]
